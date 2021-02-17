@@ -9,7 +9,8 @@ FROM python:alpine
 RUN apk add --no-cache \
   ffmpeg \
   tzdata
-  atomicparsley
+
+RUN apk add atomicparsley --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ --allow-untrusted
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
