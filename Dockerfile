@@ -9,6 +9,7 @@ FROM python:alpine
 RUN apk add --no-cache \
   ffmpeg \
   tzdata
+  atomicparsley
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
